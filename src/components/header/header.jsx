@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';   
 import Navbar from '../navbar/navbar';
 
 import './header.scss';
 
 function Header() {
   return (
-    <div class="header">
-        <div class="logo">
-            <Link to="/">Accueil</Link>"<img src="img/logo/dark.png" alt="Minhaj"/>
+    <header className="header">
+        <div className="header_logo">
+            <Link to="/"><img src={logo} className='header_logo_img' alt="Minhaj"/></Link>
         </div>
-        <Navbar />
-    </div>
+          <Navbar />
+        <span></span>
+    </header>
   );
 }
 
