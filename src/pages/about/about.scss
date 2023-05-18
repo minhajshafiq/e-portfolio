@@ -6,70 +6,44 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    
-    .about-me { 
-        border-radius: 20px;    
-        padding: 1rem;
-        margin-bottom: 2rem;
-    }
   
     .about-texts {
       display: flex;
-      flex-direction: row;
-    }
-  
-    .about-text {
-      display: flex;
       flex-direction: column;
     }
-  
+
+    .about-me { 
+      border-radius: 20px;    
+      padding: 1rem;
+      margin-bottom: 2rem;
+      background-color: grey;
+
+      &_title {
+        text-align: center;
+        text-decoration: underline;
+      }
+    }
+
+    .about-compagny {
+      border-radius: 20px;
+      background-color: grey;
+    }
+
     p {
       line-height: 1.6;
     }
 
     .my-experience {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
+        margin-top: 2rem;
     }
-      
-      .formation-item {
-        display: flex;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      
-      .formation-badge {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #f2f2f2;
-        border-radius: 5px 0 0 5px;
-        width: 100px;
-      }
-      
-      .formation-badge p {
-        margin: 0;
-        font-size: 14px;
-        font-weight: bold;
-      }
-      
-      .formation-info {
-        padding: 10px;
-      }
-      
-      .institution {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 0 0 5px 0;
-      }
-      
-      .degree {
-        margin: 0;
-        font-size: 16px;
-      }  
+
+    &_hardskill {
+      border-radius: 20px;
+      background-color: grey;
+    } 
       
       .about_hardskill {
       

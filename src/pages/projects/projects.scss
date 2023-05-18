@@ -5,12 +5,22 @@
   justify-content: center;
   margin: 2rem 0;
 
-  &_title {
+  &_maintitle {
     text-decoration: underline;
-    color: white;
-    background-color: black;
+    border: 0.5rem solid black;
+    background-color: rgb(127, 127, 255);
+    border-radius: 40px;
     padding: 1rem;
     width: 100%;
+    text-align: center;
+  }
+
+  &_title {
+    text-decoration: underline;
+    border: 0.5rem solid black;
+    background-color: rgb(127, 127, 255);
+    border-radius: 40px;
+    padding: 1rem;
     text-align: center;
   }
 
@@ -21,14 +31,29 @@
     max-width: 1300px;
   }
 
+  &_img {
+    max-width: 750px;
+    margin: 0;
+    border-radius: 25px;
+  }
+
   &_kasa {
     display: flex;
     flex-direction: column;
   }
 
-  &_description {
+  &_description-kasa {
     display: flex;
     flex-direction: row;
+    border: 0.5rem solid black;
+    border-radius: 40px;
+  }
+
+  &_description-ohmyfood {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 0.5rem solid black;
+    border-radius: 40px;
   }
 
   &_preview {
@@ -51,83 +76,67 @@
   }
   
   &_details {
-    margin: 1rem;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  &_card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem;
-  }
-
-  .project_0 {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: rgb(127, 127, 255);
-    border-radius: 20px;
-  }
-
-  .project_1 {
-    display: flex;
-    background-color: rgb(127, 127, 255);
-    border-radius: 20px;
-  }
-
-  .project_2 {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: rgb(127, 127, 255);
-    border-radius: 20px;
-  }
-
-  .project_3 {
-    display: flex;
-    background-color: rgb(127, 127, 255);
-    border-radius: 20px;
-  }
-
-  .project_4 {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: rgb(127, 127, 255);
-    border-radius: 20px;
-  }
-
-  .project_5 {
-    display: flex;
-    background-color: rgb(127, 127, 255);
-    border-radius: 20px;
-  }
-
-  &_img {
-    max-width: 750px;
-    margin: 0;
-    border-radius: 25px;
+    margin: auto;
+    text-align: center;
   }
 
   &_button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 70%;
+    align-items: center;
     padding: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &_cards2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 3rem 5%;
+  }
+  
+  &_card-img {
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  &_description {
+    text-align: center;
+  }
+
+  .project_3 {
+    display: flex;
+    flex-direction: column;
+    border: 0.3rem solid black;
+    border-radius: 20px;
+  }
+
+  .project_4 {
+    display: flex;
+    flex-direction: column;
+    border: 0.3rem solid black;
+    border-radius: 25px;
+  }
+
+  .project_5 {
+    display: flex;
+    flex-direction: column;
+    border: 0.3rem solid black;
+    border-radius: 20px;
   }
 }
